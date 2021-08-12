@@ -1,0 +1,37 @@
+.myshadow{
+    box-shadow: 0 3px 5px .5px rgba(115, 57, 201, 0.603) !important;
+}
+
+
+
+/* html,body, #root{
+    
+    height:100%;
+
+} */
+
+.bgone{
+    background-color: #7239c9 !important ;
+}
+
+.bgtwo{
+    background-color:  #efe9f8 !important;
+}
+
+.txtone{
+    color: #7239c9;
+}
+
+.txttwo{
+    color:  #efe9f8;
+}
+
+
+
+* {
+    font-family: 'Almarai', sans-serif;
+  }
+
+  .link:hover{
+      cursor: pointer;
+  }

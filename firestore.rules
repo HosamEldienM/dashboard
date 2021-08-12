@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    match /{document=**} {
+      allow read,write: if true;
+    }
+    
+      
+      
+//       allow delete: if request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2";
+//       match /products/{product} {
+//       	allow read: if true;
+// 				allow update: if (!request.resource.data.keys().hasAny(['Price','ArName','EnName',"EnDescription","ArDescription","Image","Category","Gender"])||request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2");
+// 				allow create: if request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2";
+//         allow delete: if request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2";
+//       }
+      
+      
+//       match /Users/{id} {
+//       	allow read,create: if true;
+//         allow delete: if request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2";
+//         }
+//       match /Users/{id}/{anydata=**} {
+//       	allow read,write: if request.auth.uid==id||request.auth.uid=="4K06GnuEPjhlSEFbrPtIfQHohva2";
+        
+      	
+//       }
+      
+      
+    
+  }
+}
